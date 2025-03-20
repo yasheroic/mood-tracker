@@ -31,5 +31,13 @@ Mood Tracker is a simple web application that allows users to log their daily mo
 2. The mood is stored and displayed in the log section.
 3. Refresh the page, and the previously logged mood remains saved.
 
- 
+## Deployment
+You can access the live version of the Mood Tracker here:
+[Deployment Link](https://glittering-capybara-1522d9.netlify.app/)
+
+## Screenshot
+![Mood Tracker Screenshot](screenshot.png)
+
+## License
+This project is licensed under the MIT License.
 
