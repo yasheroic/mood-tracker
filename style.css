@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#title {
+    font-size: 15px;
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 20px 0px;
+}
+#mood-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#moods {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+.mood{
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(106, 234, 106);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    min-width: 100px;
+    transition: background-color 0.3s ease;
+}
+.mood:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+#log-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+}
+#log{
+    background-color: rgb(143, 218, 241);
+    width: 90%;
+    min-height: 60vh;
+    border-radius: 30px;
+    padding: 20px;
+    
+}
+#list{
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.item{
+    
+    padding: 10px 20px;
+    font-size: 20px;
+    gap: 10px;
+    background-color: rgb(93, 212, 93);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+@media (max-width: 768px) {
+    #container {
+        width: 95%;
+    }
+    
+    .mood {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #log {
+        width: 95%;
+        min-height: 40vh;
+    }
+
+    #list {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .item {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mood {
+        font-size: 14px;
+        padding: 6px;
+        min-width: 80px;
+    }
+
+    #log {
+        min-height: 30vh;
+    }
+
+    .item {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
